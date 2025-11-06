@@ -1,237 +1,74 @@
-  body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f5f5f5;
-        }
-        
-        .navbar {
-            background-color: white;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            padding: 15px 0;
-        }
-        
-        .navbar .container {
-            max-width: 1200px;
-        }
-        
-        .navbar-brand {
-            margin-right: auto;
-        }
-        
-        .navbar-brand img {
-            height: 40px;
-        }
-        
-        .navbar-nav {
-            margin-left: 0;
-        }
-        
-        .nav-link {
-            color: #333;
-            font-weight: 500;
-            margin: 0 10px;
-        }
-        
-        .btn-register {
-            background-color: #7b2d8e;
-            color: white;
-            border-radius: 20px;
-            padding: 8px 25px;
-        }
-        
-        .btn-register:hover {
-            background-color: #5e2270;
-            color: white;
-        }
-        
-        .content-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 15px;
-        }
-        
-        .hero-section {
-            background: linear-gradient(135deg, #e8e8e8 0%, #d5d5d5 100%);
-            padding: 60px 0;
-            margin-bottom: 40px;
-        }
-        
-        .hero-section .content-container {
-            max-width: 1200px;
-           
-        }
-        
-        .hero-wrapper {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            background: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        
-        .hero-content {
-            flex: 1;
-        }
-        
-        .hero-content h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 20px;
-        }
-        
-        .hero-content p {
-            color: #666;
-            font-size: 1.1rem;
-            margin-bottom: 0;
-        }
-        
-        .hero-image {
-            flex-shrink: 0;
-            width: 280px;
-        }
-        
-        .hero-image img {
+*{
+    margin:0;
+     padding:0;
+     box-sizing:border-box
+}
+main{
+    width: 100%;
+    padding: 1.5rem;
+}
+.hero-text{
+    width:100%;
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+    .text{
+       display: flex;
+       justify-content: space-between;
+       padding-top: 1rem;
+       font-family: monospace;
+    }
+}
+.hero-image{
+    width: 100%;
+    padding-top: 1.3rem;
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+    .para{
+        font-size: 60px;
+        font-weight: 300;
+    }
+    .para-1{
+        font-size: 30px;
+        font-weight: 350;
+    }
+    .four{
+        width: 100%;
+      .brand{
+        display: flex;
+        justify-content: space-between;
+        font-size: 35px;
+        font-weight: 300;
+      }
+    }
+    .image-3{
+        width: 100%;
+        padding-top:1.3rem;
+        img{
             width: 100%;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        
-        .section-title {
-            font-size: 1.8rem;
-            font-weight: 700;
-            margin-bottom: 30px;
-            color: #333;
-        }
-        
-        .blog-card {
-            background: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            max-width: 380px;
-        }
-        
-        .blog-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-        }
-        
-        .blog-image {
-            width: 100%;
-            height: 140px;
             object-fit: cover;
         }
-        
-        .blog-content {
-            padding: 12px 15px;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .blog-title {
-            font-size: 0.9rem;
-            font-weight: 600;
-            margin-bottom: 10px;
-            color: #333;
-            flex-grow: 1;
-            line-height: 1.3;
-        }
-        
-        .blog-meta {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 0.72rem;
-            color: #999;
-        }
-        
-        .blog-category {
-            text-transform: uppercase;
-            font-weight: 600;
-            color: #7b2d8e;
-            font-size: 0.68rem;
-        }
-        
-        .cta-section {
-            background: linear-gradient(135deg, #d4c5e8 0%, #b8a8d4 100%);
-            border-radius: 10px;
-            padding: 40px;
-            margin: 60px 0;
-            display: flex;
-            align-items: center;
-            gap: 30px;
-        }
-        
-        .cta-image {
-            width: 200px;
-            height: auto;
-            border-radius: 10px;
-        }
-        
-        .cta-content h3 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-        
-        .cta-content p {
-            margin-bottom: 20px;
-            color: #555;
-        }
-        
-        .btn-cta {
-            background-color: white;
-            color: #7b2d8e;
-            border: 2px solid #7b2d8e;
-            border-radius: 20px;
-            padding: 8px 25px;
-            font-weight: 600;
-        }
-        
-        .btn-cta:hover {
-            background-color: #7b2d8e;
-            color: white;
-        }
-        
-        @media (max-width: 768px) {
-            .hero-content h1 {
-                font-size: 2rem;
-            }
-            
-            .hero-wrapper {
-                flex-direction: column;
-                text-align: center;
-            }
-            
-            .hero-image {
-                width: 200px;
-            }
-            
-            .cta-section {
-                flex-direction: column;
-                text-align: center;
-            }
-            
-            .cta-image {
-                width: 150px;
-            }
-        }
-        #most{
-            border: none;
-        }
-    #popular{
-        border: none;
     }
-    #most:hover{
-        text-decoration: underline;
+}
+.third{
+    width: 100%;
+    padding: 1.5rem;
+    .tailored{
+        width: 100%;
+        .tail-h{
+            font-size: 50px;
+            font-weight: 400;
+        }
+     
     }
-    #popular:hover{
-        text-decoration: underline;
-    }
+}
+.tail-text{
+            font-size: 20px;
+            font-family: monospace;
+            color: grey;
+        }
+
+      
