@@ -1,126 +1,27 @@
-body{
-       background-image: url(https://images.unsplash.com/photo-1486520299386-6d106b22014b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGxvZ2lufGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600);
-   background-repeat: none;
-background-size: cover;
-}
 
-.Parent{
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    height: 100vh;
-  
+.parent{
+  display: flex;
+ justify-content: center;
+ align-items: center;
+  padding: 20px;
+  width: 100vw;
+  height: 100vh;
+
 }
-#main{
-    align-content: center;
-    width: 400px;
-    height: 500px;
-    border-radius: 10px;
-    
-    box-shadow: 5px 10px 14px 5px rgb(53, 159, 246);
-    
-}
-.input{
-    margin-left: 30px;
-    margin-bottom: 10px;
-  padding-left: 15px;
-border-radius: 5px;
- padding: 10px;
-  font: 400;
-  font-size: 20px;
-  border: none;
-}
-.input1{
-    margin-left: 3px;
-     margin-bottom: 10px;
-border-radius: 5px;
- padding: 10px;
-  font: 400;
-  font-size: 20px;
-  border: none;
-}
-.input2{
-    margin-left: 30px;
-     margin-bottom: 10px;
- border-radius: 5px;
- padding: 10px;
-  font: 400;
-  font-size: 20px;
-  border: none;
-}
-.btn{
-    padding: 0px 50px 0px 50px;
-    margin-left: 27%;
-    margin-top: 50px;
-    font-size: 30px;
-    border-radius: 5px;
-    border: none;
+.card{
+width: 700px;
+height: 300px;
+  text-align: center;
+  background-color: crimson;
+  border-radius: 20px;
+  h1{
     color: white;
-   background-color: rgb(36, 153, 226); 
-   
-}
-.btn:hover{
-    background: #000;
-    cursor: pointer;
-   
-}
-.Username{
-    font-size: 20px;
-    color: white;
-    margin-left: 10px
-}
-.Name{
-    font-size: 20px;
-    color: white;
-    margin-left: 10px 
-}
-.Email{
-     font-size: 20px;
-    color: white;
-    margin-left: 10px
-}
-.head{
-    margin-top: 5px;
-    margin-bottom: 50px;
-    font-size: 50px;
-margin-left: 18%;
-color: white;
-font-family: Georgia, 'Times New Roman', Times, serif;
-}
-.para{
-    margin-left: 30%;
-    color: white;
-    font-size:25px ;
-    
-}
-.checkl{
- margin-left: 10px;
-color: white;
-font-size: 20pxpx;
-}
-.check{
-    width: 15px;
-    height: 15px;
-    margin-top: 40px;
-    margin-left: 5px;
-}
-.nav{
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 40px;
-}
-ul li {
-    color: white;
-    list-style: none;
-    display: inline-block;
-    font-size: 30px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-ul li:hover{
-    color: rgb(97, 101, 167);
-    cursor: pointer;
-}
-ul li a{
-margin-right: 40px;
-cursor: pointer;
+    font-size: 80px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  p{
+    font-size: 40px;
+     color: white;
+  }
 }
